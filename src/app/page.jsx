@@ -26,7 +26,7 @@ export default function Home() {
           return (
             <div
               key={p.id}
-              className="w-full sm:w-44 h-80 flex flex-col items-center justify-between cursor-pointer p-2
+              className="w-full sm:w-36 md:w-40 lg:w-44 h-80 flex flex-col items-center justify-between cursor-pointer p-2
               border border-gray-200 rounded-2xl hover:scale-110 translate-0 duration-500"
             >
               <Image
