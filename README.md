@@ -10,23 +10,31 @@ Search products by title
 Loading and error handling
 Responsive layout
 
-### Tech Stack
+## Tech Stack
 
-Next.js
-React
-Tailwind CSS
-TanStack Query (React Query)
-Axios
-React Hot Toast
-Material Tailwind
-React Icons
-API
+### Next.js
+
+### React
+
+### TailwindCSS
+
+### TanStack-Query (React-Query)
+
+### Axios
+
+### React-Hot-Toast
+
+### Material-Tailwind
+
+### React-Icons
+
+### API
 
 This project uses the Fake Store API for product data:
 
 https://fakestoreapi.com/
 
-#### Getting Started
+### Getting Started
 
 Clone the repository:
 
@@ -47,6 +55,6 @@ npm run dev
 Then open:
 http://localhost:3000
 
-##### Notes
+#### Notes
 
 This project was created as part of a front-end technical assessment for Andia.
