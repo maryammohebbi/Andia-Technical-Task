@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Andia Shop",
-  description: "A shop using fake api just for test",
+  title: "Andia Online Store",
+  description: "An online store using fake api just for test",
 };
 
 export default function RootLayout({ children }) {
