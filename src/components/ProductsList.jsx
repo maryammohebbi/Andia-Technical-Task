@@ -1,22 +1,28 @@
 "use client";
 
 import { useProducts } from "@/hooks/useProducts";
+import Loading from "@/ui/Loading";
 import Image from "next/image";
 import React from "react";
+import toast from "react-hot-toast";
 import { BsBoxSeam } from "react-icons/bs";
 
-function ProductsList() {
+function ProductsList({ search }) {
   const { products, isLoading, isError, error } = useProducts();
 
-  if (isLoading) return <p>Loading...</p>;
+  if (isLoading) return <Loading />;
 
   if (isError) {
-    return <p>{error.message}</p>;
+    return toast.error(error.message);
   }
+
+  const filteredProducts = products.filter((product) =>
+    product.title.toLowerCase().includes(search.toLowerCase()),
+  );
 
   return (
     <div className="flex gap-5 flex-wrap items-center justify-between select-none">
-      {products.map((product) => {
+      {filteredProducts.map((product) => {
         return <ProductCard key={product.id} product={product} />;
       })}
     </div>
