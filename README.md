@@ -30,17 +30,18 @@ https://fakestoreapi.com/
 
 Clone the repository:
 
-git clone <repository-url>
+git clone https://github.com/maryammohebbi/Andia-Technical-Task.git
 
 Install dependencies:
 
 ```bash
 npm install
+```
 
 Run the development server:
 
+```bash
 npm run dev
-
 ```
 
 Then open:
